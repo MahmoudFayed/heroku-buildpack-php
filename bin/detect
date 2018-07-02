@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-if [[ -f "$1/composer.json" || -f "$1/index.php" || -f "$1/index.ring" ]]; then
-	echo "PHP" && exit 0
+if [[ -f "$1/index.ring" ]]; then
+	echo "Ring" && exit 0
 else
 	exit 1
 fi
