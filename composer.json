@@ -1,5 +1,5 @@
 {
-	"name": "heroku/heroku-buildpack-ring",
+	"name": "heroku/heroku-buildpack-php",
 	"description": "Toolkit for starting a Ring application, using Apache2 on Heroku",
 	"keywords": ["heroku", "ring", "apache", "apache2"],
 	"homepage": "https://github.com/MahmoudFayed/heroku-buildpack-ring",
