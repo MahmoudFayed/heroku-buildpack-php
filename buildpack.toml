@@ -1,5 +1,5 @@
 [buildpack]
-name = "Ring"
+name = "PHP"
 
 	[publish.Ignore]
 	files = [
