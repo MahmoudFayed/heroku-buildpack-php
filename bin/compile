@@ -80,20 +80,6 @@ if [[ -s "$COMPOSER" ]]; then
 		}
 	fi
 else
-	if [[ ! -f "$COMPOSER" ]]; then
-		mcount "warnings.composer_json.missing"
-		warning <<-EOF
-			No '$COMPOSER' found.
-			Using 'index.php' to declare app type as PHP is considered legacy
-			functionality and may lead to unexpected behavior.
-		EOF
-	else
-		mcount "warnings.composer_json.empty"
-		notice <<-EOF
-			Your '$COMPOSER' is completely empty.
-			Please change its contents to at least '{}' so it is valid JSON.
-		EOF
-	fi
 	echo "{}" > $COMPOSER
 fi
 
